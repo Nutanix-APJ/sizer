@@ -4,17 +4,17 @@
 Lab - Sizer Intro/RAW Input
 ---------------------------
 
-Overview
+简介
 --------
 
-In this exercise we will use data from :ref:`rvtools` and :ref:`rvtools_answers` to create a Sizer scenario and introduce you to many of Sizer's key features.
+本实验将采用来自:ref:`rvtools` 和 :ref:`rvtools_answers` 的数据创建Sizer场景并向你介绍众多的Sizer关键特性。
 
-Accessing Sizer
+接入 Sizer
 ---------------
 
-The Nutanix Sizer tool is available to Nutanix employees and partners at http://sizer.nutanix.com
+The Nutanix Sizer 工具在Nutanix员工和合作伙伴链接 http://sizer.nutanix.com
 
-**Nutanix Employees** - Choose **Salesforce Login**
+**Nutanix Employees** - 选择 **Salesforce Login**
 
 .. note:: While Nutanix employees can access Sizer via their My Nutanix credentials, accessing Sizer via Salesforce provides simplified workflows for uploading BOMs and creating quotes.
 
@@ -22,43 +22,49 @@ The Nutanix Sizer tool is available to Nutanix employees and partners at http://
 
 .. figure:: images/1.png
 
-Creating a Scenario
+创建一个场景
 -------------------
 
-Once logged in, click **+ Create New Scenario**.
+登录之后, 点击 **+ Create New Scenario**.
 
-Provide a **Scenario Name**.
+提供一个 **Scenario Name**.
 
-For employees, provide a **Customer Account**.
+对于员工，提供一个 **Customer Account**.
 
 .. note::
 
-  Customer Account and Opportunity names will auto-populate as you begin typing. Opportunity name isn't required to create the scenario, but is required later on to push the BOM to Salesforce.
+客户帐户和Opportunity名称将在您开始输入时自动填充。 创建scenario不需要创建Opportunity名称，但稍后需要将BOM推送到Salesforce。
 
-Under **Use Vendor Models**, select the desired hardware platform (e.g. **Nutanix Models**).
+在**使用供应商模型**下，选择所需的硬件平台（例如** Nutanix型号**）。
+
+提供**执行摘要**和**要求**。 执行摘要应总结项目以及我们正在寻求解决的任何问题。 要求应总结用于调整工作负载大小的关键发现数据。
+
+在 **Use Vendor Models**下面, 选择所需的硬件平台(e.g. **Nutanix Models**).
+  Customer Account and Opportunity names will auto-populate as you begin typing. Opportunity name isn't required to create the scenario, but is required later on to push the BOM to Salesforce.
 
 Provide the **Executive Summary** and **Requirements**. Executive Summary should summarize the project and any problems we are seeking to address. Requirements should summarize key discovery data for sizing the workload.
 
 .. note::
 
-  Executive Summary and Requirements are not currently required to create the scenario, but are required prior to exporting the BOM for a scenario. All other fields are optional, but filling them out consolidates source information for a sizing scenario and is helpful when sharing or referencing old scenarios.
+  创建scenario目前不需要Executive Summary and Requirements ，但在导出方案的BOM之前需要这些信息。 所有其他字段都是可选字段，但填写它们会整合调整方案的源信息，在共享或引用旧方案时很有用。
+
 
 .. figure:: images/2.png
 
-Click **Create**.
+点击 **Create**.
 
-Adding Workloads
+增添工作负载
 ----------------
 
 *The prospect has indicated they wish to consolidate the mixed workloads running on* **Cluster1** *and* **Mgmt** *in their current environment.*
 
-Click **+ Add Workload**.
+点击 **+ Add Workload**.
 
-Specify **Cluster1** as the **Workload Name**.
+特定 **Cluster1** 作为 **Workload Name**.
 
 .. note:: It is helpful to provide meaningful names to each workload in a scenario. Using the customer's cluster or project naming makes it easier for a customer to follow the logic behind your Nutanix sizing scenario.
 
-Select **RAW Input** as the **Workload Type**.
+选择 **RAW Input** 作为 **Workload Type**.
 
 .. note::
 
@@ -68,7 +74,7 @@ Select **RAW Input** as the **Workload Type**.
 
 Click **Next**.
 
-Fill out the following fields:
+填充如下字段:
 
 - **vCPUs** - 257
 - **vCPU:pCore ratio** - 4
@@ -78,11 +84,16 @@ Fill out the following fields:
 
 .. note::
 
-  CPU requirement can also be defined in GHz. Utilizing this input can be useful when you have historical CPU utilization from tools like Live Optics or vRealize Operations.
 
 Under **Profile Info**, click **Customize**.
 
 Specify **32** GiB as the **RAM Overhead per CVM**. Click **Save**.
+
+CPU要求也可以用GHz定义。 当您使用Live Optics或vRealize Operations等工具获得历史CPU利用率时，使用此输入非常有用。
+
+在**个人资料信息**下，点击**自定义**。
+
+指定** 32 ** GiB作为每个CVM的** RAM开销**。 点击**保存**。
 
 .. figure:: images/4.png
 
@@ -253,16 +264,18 @@ Increase the **SSD Quantity** to **6** and press **Calculate**. The Effective Ca
 
 .. figure:: images/16.png
 
-Manual Sizing
+手工 Sizing
 -------------
 
-In many instances, you may want to manually configure your node configuration. Examples may include wanting to match the configuration of an existing cluster, or as in the case of this exercise, electing for an amount of storage that exceeds the immediate requirement of the workload.
+在许多情况下，您可能需要手动配置节点配置。 示例可能包括希望匹配现有群集的配置，或者在本练习的情况下，选择超出工作负载的直接要求的存储量。
 
-Click **Sizer** in the top toolbar to return to your list of scenarios and open your test lab scenario.
+** Sizer **以返回到方案列表并打开测试实验室方案。
 
-Select **Modify** from the **Sizing Options** menu.
+单击顶部工具栏中的 **Sizer** 以返回到方案列表并打开测试实验室方案。
 
-Switch from **Automatic** to **Manual**.
+从 **Sizing Options** 目录.选择 **Modify** 
+
+切换 **Automatic** 到 **Manual**.
 
 .. figure:: images/17.png
 
@@ -353,7 +366,7 @@ Open the PDF and familiarize yourself with the layout of the output.
 
 For Nutanix employees, attaching the BOM to the appropriate Salesforce opportunity is a critical step in the sales cycle. To upload the BOM to Salesforce, select the :fa:`ellipsis-v` icon located to the right of the scenario name, and select **Push BOM to Salesforce**.
 
-Specify the **Opportunity Name** and click **Push BOM**.
+详述 **Opportunity Name** 点击 **Push BOM**.
 
 .. figure:: images/28.png
 
