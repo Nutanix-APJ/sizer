@@ -7,7 +7,7 @@
 简介
 --------
 
-本实验将采用来自:ref:`rvtools` 和 :ref:`rvtools_answers` 的数据创建Sizer场景并向你介绍众多的Sizer关键特性。
+本实验将采用来自: ref:`rvtools` 和 :ref:`rvtools_answers` 的数据创建Sizer场景并向你介绍众多的Sizer关键特性。
 
 接入 Sizer
 ---------------
