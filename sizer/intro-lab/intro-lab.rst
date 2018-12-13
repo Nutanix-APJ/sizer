@@ -1,7 +1,7 @@
 .. _sizer-intro-lab:
 
 ---------------------------
-Lab - Sizer Intro/RAW Input
+实验 - Sizer介绍/RAW 输入
 ---------------------------
 
 简介
@@ -12,12 +12,11 @@ Lab - Sizer Intro/RAW Input
 接入 Sizer
 ---------------
 
-The Nutanix Sizer 工具在Nutanix员工和合作伙伴链接 http://sizer.nutanix.com
+Nutanix Sizer 工具在Nutanix员工和合作伙伴链接 http://sizer.nutanix.com
 
 **Nutanix Employees** - 选择 **Salesforce Login**
 
-.. note:: While Nutanix employees can access Sizer via their My Nutanix credentials, accessing Sizer via Salesforce provides simplified workflows for uploading BOMs and creating quotes.
-
+.. note::虽然Nutanix员工可以通过他们的My Nutanix凭证访问Sizer，但通过Salesforce访问Sizer可以简化上传BOM和创建报价的工作流程。
 **Partners** - Choose **My Nutanix Login**
 
 .. figure:: images/1.png
@@ -37,12 +36,9 @@ The Nutanix Sizer 工具在Nutanix员工和合作伙伴链接 http://sizer.nutan
 
 在**使用供应商模型**下，选择所需的硬件平台（例如** Nutanix型号**）。
 
-提供**执行摘要**和**要求**。 执行摘要应总结项目以及我们正在寻求解决的任何问题。 要求应总结用于调整工作负载大小的关键发现数据。
+提供 **Executive Summary** 和 **Requirements**. Executive Summary应总结项目以及我们正在寻求解决的任何问题。 Requirements应总结用于计算工作负载大小的关键发现数据。
 
 在 **Use Vendor Models**下面, 选择所需的硬件平台(e.g. **Nutanix Models**).
-  Customer Account and Opportunity names will auto-populate as you begin typing. Opportunity name isn't required to create the scenario, but is required later on to push the BOM to Salesforce.
-
-Provide the **Executive Summary** and **Requirements**. Executive Summary should summarize the project and any problems we are seeking to address. Requirements should summarize key discovery data for sizing the workload.
 
 .. note::
 
@@ -56,7 +52,7 @@ Provide the **Executive Summary** and **Requirements**. Executive Summary should
 增添工作负载
 ----------------
 
-*The prospect has indicated they wish to consolidate the mixed workloads running on* **Cluster1** *and* **Mgmt** *in their current environment.*
+*潜在客户表示他们希望在当前环境中整合在* **Cluster1** *and* **Mgmt** *上运行的混合工作负载。*
 
 点击 **+ Add Workload**.
 
